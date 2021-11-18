@@ -96,9 +96,31 @@
 
 // Q#13
 
-var age = +prompt("Your age ?");
-var birthday = new Date().getFullYear();
-var ageCalc = birthday - age;
-document.write(`your Age is: ${age} <br>
- your birth Year is: ${ageCalc}`);
+// var age = +prompt("Your age ?");
+// var birthday = new Date().getFullYear();
+// var ageCalc = birthday - age;
+// document.write(`your Age is: ${age} <br>
+//  your birth Year is: ${ageCalc}`);
+
+// Q#14
+
+var customerName = prompt("Enter Your Name").toUpperCase();
+var month = prompt ("Enter month");
+var capMonth = month.charAt(0).toUpperCase()+ month.slice (1);
+var numOfUnits = +prompt("Enter num of units");
+var chargesPerUnit = 16;
+var netAmount = (numOfUnits * chargesPerUnit);
+var latepaymentCharges =350;
+var grossAmount = netAmount + latepaymentCharges;
+
+
+
+document.write("Cutomer Name: " + customerName);
+document.write("<br>Month: " + capMonth);
+document.write("<br>Number Of Units: " + numOfUnits);
+document.write("<br> Charges Of Per Unit: " + chargesPerUnit);
+document.write("<br>Net Amount Payable (within Due Date): " + netAmount);
+document.write("<br> Late Payment Charges:" + latepaymentCharges);
+document.write("<br> Gross Amount Payable (after due date):" + grossAmount);
+
 
